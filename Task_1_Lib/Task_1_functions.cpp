@@ -1,7 +1,7 @@
 #include <iostream>
 
 int correctInputk() {
-  std::cout << "Введите число k --- размерность матрицы << '\n'";
+  std::cout << "Введите число k --- размерность матрицы << \n";
   int x = 0;
   bool incorrectInput = false;
   do {
@@ -73,7 +73,8 @@ void OutputInput(double** array, int k, char type, double sum) {
     }
     std::cout << '\n';
   }
-  std::cout << "Сумма на диагоналях матрицы С равна " << sum << '\n';
+  std::cout << "Сумма на диагоналях матрицы " << type << " равна " << sum
+            << '\n';
 }
 
 void intro() {
