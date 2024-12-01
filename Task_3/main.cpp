@@ -3,11 +3,11 @@
 void intro() {
   std::cout << "Задание 3. Выполнил Колесников Антон Сергеевич" << '\n';
   std::cout
-      << "Эта программа получает из исходной матрицы порядка n*k, \n"
+      << "Эта программа получает из исходной матрицы порядка n*k, где n = k \n"
          "матрицу, состоящую из четных элементов, находящихся на главной\n "
          "диагонали исходной матрицы.А далее вычисляет произведение\n "
          "элементов полученной матрицы \n";
-  std::cout << "*Введите n или k = 0 чтобы выйти*" << '\n';
+  std::cout << "*Введите n = 0 чтобы выйти*" << '\n';
 }
 
 int correctInputN() {
@@ -76,7 +76,7 @@ int findcounter(int** array, int LastIndexM, int LastIndexN) {
 }
 
 void OutputInput(int* array, int counter) {
-  std::cout << "Новая матрица выглядит так: " << '\n';
+  std::cout << "Новый массив выглядит так: " << '\n';
   for (int i = 0; i < counter; ++i) {
     std::cout << '[' << array[i] << "] ";
   }
@@ -123,7 +123,7 @@ int main() {
         delete[] array[i];
       }
       delete[] array;
-      break;
+      continue;
     }
 
     OutputInput(NewArray, counter);
