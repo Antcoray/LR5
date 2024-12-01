@@ -33,7 +33,7 @@ int correctInputN() {
 int correctInputx(int indexM, int indexN) {
   std::cout << "Введите " << indexN + 1 << "-й элемент " << indexM + 1
             << "-й строки" << '\n';
-  double x = 0;
+  int x = 0;
   bool incorrectInput = false;
   do {
     incorrectInput = false;
